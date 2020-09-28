@@ -1,0 +1,43 @@
+Settings:
+  #The chance out of 100
+  chance: 0.01
+  gui-name: '&nCaptcha: %customname% | %item_id%'
+  gui-size: 27
+  custom-item-name: '&1:&r &7Item Name &b%random_number% &1:&r'
+  random-number-max: 99
+  notify-permission: 'cropcaptcha.notify'
+  notify-disconnect: "&e&lCROP CAPTCHA &8\xbb &6%player% &7has just logged out whilst in a menu."
+  notify-kicked: "&e&lCROP CAPTCHA &8\xbb &6%player% &7just got kicked for using his &c5 attempts."
+  blocklist-captcha:
+  - 'ACACIA_DOOR_ITEM'
+  - 'ACACIA_FENCE'
+  - 'ACACIA_FENCE_GATE'
+  - 'ACACIA_STAIRS'
+  - 'ACTIVATOR_RAIL'
+  - 'ANVIL'
+  - 'APPLE'
+  - 'ARMOR_STAND'
+  - 'ARROW'
+  - 'BAKED_POTATO'
+  - 'BANNER'
+  - 'BARRIER'
+  - 'BEACON'
+  - 'BED'
+  - 'BEDROCK'
+  - 'BIRCH_DOOR_ITEM'
+  - 'BIRCH_FENCE'
+  - 'BIRCH_FENCE_GATE'
+  blocklist-crops:
+  - 'SUGAR_CANE_BLOCK'
+  - 'POTATO'
+  - 'CARROT'
+  - 'NETHER_WARTS'
+  - 'CACTUS'
+  - 'CROPS' #Wheat
+  - 'MELON_BLOCK'
+  - 'PUMPKIN'
+  
+Failure:
+  attempts: 5
+  commands:
+  - 'kick %player% Failed Captcha, Reconnect -s'

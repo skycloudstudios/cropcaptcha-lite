@@ -1,0 +1,4 @@
+main: me.resources.cropcaptcha.Main
+name: SkyCaptcha
+version: 1.0
+author: AdvantageDev
